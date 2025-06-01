@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="name">Gopi Kishan Arya</div>
+    <ul class="links">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Skill.html">Skill</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="form">
+    <form method="post" action="data.php">
+      <h2>Contact Us</h2>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="msg">Message</label>
+      <input type="text" id="msg" name="msg" placeholder="Type Something here" required/>
+
+      <input type="submit" class="submit" value="Submit" />
+    </form>
+  </div>
+
+</body>
+</html>
