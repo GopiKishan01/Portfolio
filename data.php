@@ -8,6 +8,7 @@ $conn = mysqli_connect($server, $user, $password, $db);
 
 if (!$conn) {
      header("Location: error.html");
+     exit();
 }
 
 $name = $_POST['name'];
