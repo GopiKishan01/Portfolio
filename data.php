@@ -7,7 +7,7 @@ $db = "data";
 $conn = mysqli_connect($server, $user, $password, $db);
 
 if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+     header("Location: error.html");
 }
 
 $name = $_POST['name'];
