@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>PortFolio</title>
     <link rel="StyleSheet" href="Style.css">
 </head>
 <body>
@@ -12,23 +12,90 @@
             Gopi Kishan Arya
         </div>
         <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Skill.html">Skill</a></li>
-            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skill">Skill</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section class="main">
+    <section id="main">
         <div class="info">
             <h1>Hi,<br>I'm <span class="highlight">Gopi Kishan Arya</span></h1>
             <h2>FrontEnd Web Devloper</h2>
-            <a href="Contact.html">Contact me</a>
+            <div class =btn>
+                <a href="#Contact">Contact me</a>
+            </div>
         </div>
     
         <div class="image">
             <img src="gopi.png" alt="My image">
         </div>
     </section>
+
+
+    <section id="About">
+        <h2>About</h2>
+        <div class="about">
+            <div class="imageA">
+                <img src="gopi.png" alt="My image">
+            </div>
+
+            <div class="intro">
+                <p>
+                    I'm a B.Tech student passionate about Front-End web development.
+                    I love building projects, solving problems with code, and continuously learning new technologies.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Skill">
+        <h2>Technical Skills</h2>
+        
+        <div class="skill-content">
+            <div class="skill-image">
+            <img src="skill.jpg" alt="image">
+            </div>
+
+            <div class="skill-table">
+            <table>
+                <tr>
+                <th>Skills</th>
+                <th>Level</th>
+                </tr>
+                <tr><td>HTML</td><td>Intermediate</td></tr>
+                <tr><td>CSS</td><td>Intermediate</td></tr>
+                <tr><td>JS</td><td>Intermediate</td></tr>
+                <tr><td>PHP</td><td>Intermediate</td></tr>
+                <tr><td>MySql</td><td>Intermediate</td></tr>
+                <tr><td>Python</td><td>Intermediate</td></tr>
+                <tr><td>C++</td><td>Intermediate</td></tr>
+            </table>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Contact">
+        <form method="post" action="https://formspree.io/f/xrbkgerj">
+        <h2>Contact Us</h2>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+        <label for="msg">Message</label>
+        <input type="text" id="msg" name="msg" placeholder="Type Something here" required/>
+
+        <button>Submit</button>
+        </form>
+    </section>
+   
+
+    <script src="script.js"></script>
 </body>
 </html>
